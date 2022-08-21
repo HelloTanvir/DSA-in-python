@@ -1,6 +1,8 @@
 # find the sum of digits of a positive integer number using recursion
 
 def findSum(number):
+    assert number >= 0 and int(number) == number, 'The number should be a positive integer'
+
     last_digit = number % 10
     new_number = number // 10
 
