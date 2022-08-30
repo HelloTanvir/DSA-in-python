@@ -68,24 +68,3 @@ class DoubleLinkedlist:
             node = node.next
         return f'[{", ".join(str(value) for value in values)}]'
 
-
-myList = DoubleLinkedlist()
-
-myList.add(1)
-myList.add(2)
-myList.add(3)
-
-print(f'size of the list: {myList.size}')
-print(myList)
-
-myList.remove_first_node()
-print(f'size of the list: {myList.size}')
-print(myList)
-
-myList.remove_last_node()
-print(f'size of the list: {myList.size}')
-print(myList)
-
-myList.remove(2)
-print(f'size of the list: {myList.size}')
-print(myList)
