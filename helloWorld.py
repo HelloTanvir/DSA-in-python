@@ -1,6 +1,6 @@
-def sayHello(name) :
-    print(f"Hello {name}")
+def say_hello(user_name: str) -> None :
+    print(f"Hello {user_name}")
 
 name = input("What is your name? ")
 
-sayHello(name)
+say_hello(name)
