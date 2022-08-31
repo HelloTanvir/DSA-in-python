@@ -1,7 +1,7 @@
-def binary_search(nums: list[int], target: int) -> int:
+def binarySearch(nums: list[int], target: int) -> int:
     left, right = 0, len(nums) - 1
 
-    while left < right:
+    while left <= right:
         mid = left + ((right - left) // 2)
 
         if nums[mid] == target:
