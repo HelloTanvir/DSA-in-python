@@ -1,4 +1,10 @@
 {
   "python.linting.pylintEnabled": true,
-  "python.linting.enabled": true
+  "python.linting.enabled": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": false,
+  "code-runner.executorMap": {
+    "c": "clear; cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "clear; cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  }
 }
